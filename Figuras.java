@@ -1,13 +1,16 @@
 public class Figuras {
+    public static double calcularAreaCirculo(double radio) {
+        return Math.PI * radio * radio;
+    }
+    public static double calcularAreaCuadrado(double lado) {
+        return lado * lado;
+    }
+    public static double calcularAreaRectangulo(double base, double altura) {
+        return base * altura;
+    }
     public static void main(String[] args) {
-        String f = "circulo";
-        double x = 5;
-        double r = 0;
-        if (f.equals("circulo")) {
-            r = 3.14 * x * x;
-        } else if (f.equals("cuadrado")) {
-            r = x * x;
-        }
-        System.out.println(r);
+        System.out.println("Área círculo: " + calcularAreaCirculo(5));
+        System.out.println("Área cuadrado: " + calcularAreaCuadrado(4));
+        System.out.println("Área rectángulo: " + calcularAreaRectangulo(4, 6));
     }
 }
